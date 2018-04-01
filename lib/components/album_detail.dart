@@ -37,7 +37,7 @@ class AlbumDetail extends StatelessWidget {
                   ),
                 ),
                 new Container(
-                  height: 80.0,
+                  height: 75.0,
                   child: new Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
