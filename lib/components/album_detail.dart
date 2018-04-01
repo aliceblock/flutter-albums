@@ -36,22 +36,30 @@ class AlbumDetail extends StatelessWidget {
                     width: 75.0,
                   ),
                 ),
-                new Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    new Text(this._album.title,
-                      style: new TextStyle(
-                        color: Colors.black,
-                        fontSize: 24.0
+                new Container(
+                  height: 80.0,
+                  child: new Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      new Container(
+                        child: new Text(this._album.title,
+                          style: new TextStyle(
+                            color: Colors.black,
+                            fontSize: 24.0
+                          )
+                        ),
+                      ),
+                      new Container(
+                        child: new Text(this._album.artist,
+                          style: new TextStyle(
+                            color: Colors.black54,
+                            fontSize: 16.0
+                          )
+                        ),
                       )
-                    ),
-                    new Text(this._album.artist,
-                      style: new TextStyle(
-                        color: Colors.black54,
-                        fontSize: 16.0
-                      )
-                    ),
-                  ],
+                    ],
+                  ),
                 )
               ],
             )),

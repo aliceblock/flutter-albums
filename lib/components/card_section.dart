@@ -10,7 +10,7 @@ class CardSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
-      padding: new EdgeInsets.all(10.0),
+      padding: new EdgeInsets.all(5.0),
       decoration: new BoxDecoration(
         border: (this._bottomBorder? new Border(bottom: new BorderSide(width: 1.0, color: Colors.black12)): new Border())
       ),
