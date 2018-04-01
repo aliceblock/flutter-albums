@@ -5,6 +5,7 @@ import '../models/album.dart';
 import './card_section.dart';
 
 class AlbumDetail extends StatelessWidget {
+  static const HEADER_HEIGHT = 75.0;
   Album _album;
 
   AlbumDetail(this._album);
@@ -33,11 +34,11 @@ class AlbumDetail extends StatelessWidget {
                 new Container(
                   margin: new EdgeInsets.symmetric(horizontal: 10.0),
                   child: new Image.network(this._album.thumbnailImage,
-                    width: 75.0,
+                    width: HEADER_HEIGHT,
                   ),
                 ),
                 new Container(
-                  height: 75.0,
+                  height: HEADER_HEIGHT,
                   child: new Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
