@@ -42,20 +42,15 @@ class _AlbumListState extends State<AlbumList> {
     }
   }
 
-  List<AlbumDetail> generateAlbumDetail() {
-    List<AlbumDetail> albumDetails = [];
-    for(var album in this._albums) {
-      albumDetails.add(new AlbumDetail(album));
-    }
-    return albumDetails;
-  }
-
   @override
   Widget build(BuildContext context) {
     return new Container(
-      child: new ListView(
+      child: new ListView.builder(
+        itemCount: this._albums.length,
         padding: new EdgeInsets.only(bottom: 10.0),
-        children: this.generateAlbumDetail(),
+        itemBuilder: (context, index) {
+          return new AlbumDetail(this._albums[index]);
+        },
       ),
     );
   }
